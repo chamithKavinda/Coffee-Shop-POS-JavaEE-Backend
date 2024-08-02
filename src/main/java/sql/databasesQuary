@@ -6,15 +6,15 @@ create table Customer(
     cust_id varchar(25),
     cust_name varchar(25),
     address varchar(40),
-    contact varchar(10)PRIMARY KEY
+    contact int(10)PRIMARY KEY
 );
 
 create table Product(
     pro_id varchar(25)PRIMARY KEY,
     pro_name varchar(25),
-    price varchar(25),
+    price double,
     category varchar(25),
-    quantity varchar(25)
+    quantity int(25)
 );
 
 
