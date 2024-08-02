@@ -1,0 +1,6 @@
+<context>
+    <Resource name="jdbc/coffeeShopPos" auth="Container" type="javax.sql.DataSource"
+              maxTotal="10" maxIdle="8" maxWaitMillis="-1"
+              username="root" password="CK13" driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/coffee_shop_pos"/>
+</context>
