@@ -1,4 +1,7 @@
 package org.example.coffeeshopposjavaeebackend.dao;
 
-public interface CrudDAO <CONNECTION> extends SuperDAO{
+import java.sql.SQLException;
+
+public interface CrudDAO <CONNECTION , T> extends SuperDAO{
+
 }

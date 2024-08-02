@@ -6,7 +6,7 @@
 
     <context-param>
         <param-name>origin</param-name>
-        <param-value>http://127.0.0.1:5501</param-value>
+        <param-value>http://127.0.0.1:5500</param-value>
     </context-param>
 
     <filter>
@@ -31,7 +31,7 @@
 
     <resource-ref>
         <description>DB Connection</description>
-        <res-ref-name>jdbc/coffeeShopPos</res-ref-name>
+        <res-ref-name>jdbc/pos</res-ref-name>
         <res-type>javax.sql.DataSource</res-type>
         <res-auth>Container</res-auth>
     </resource-ref>

@@ -11,5 +11,15 @@ public class CustomerDTO{
     private String custId;
     private String custName;
     private String custAddress;
-    private int custContact;
+    private String custContact;
+
+    @Override
+    public String toString() {
+        return "CustomerDTO{" +
+                "custId='" + custId + '\'' +
+                ", custName='" + custName + '\'' +
+                ", custAddress='" + custAddress + '\'' +
+                ", custContact='" + custContact + '\'' +
+                '}';
+    }
 }
