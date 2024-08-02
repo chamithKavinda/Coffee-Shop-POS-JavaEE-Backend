@@ -1,4 +1,4 @@
-package org.example.coffeeshopposjavaeebackend.Controller;
+package org.example.coffeeshopposjavaeebackend.api;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -14,7 +14,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 @WebServlet(urlPatterns = "/customer",loadOnStartup = 2)
-public class Customer extends HttpServlet {
+public class CustomerServlet extends HttpServlet {
 
     Connection connection;
     @Override
