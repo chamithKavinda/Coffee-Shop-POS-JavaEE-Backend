@@ -53,6 +53,20 @@ public class CustomerServlet extends HttpServlet {
     }
 
     @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try (var writer = resp.getWriter()){
+            var customerBOImpl = new CustomerBOImpl();
+            Jsonb jsonb = JsonbBuilder.create();
+
+            var customerContact = req.getParameter("customerContact");
+            resp.setContentType("application/json");
+            jsonb.toJson(customerBOImpl.getCustomer(customerContact,connection),writer);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try(var write = resp.getWriter()){
             var customerContact = req.getParameter("contact");

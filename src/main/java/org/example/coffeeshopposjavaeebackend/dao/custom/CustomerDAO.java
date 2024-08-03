@@ -12,4 +12,6 @@ public interface CustomerDAO extends CrudDAO {
     boolean deleteCustomer(String customerContact, Connection connection) throws SQLException;
 
     boolean updateCustomer(String customerContact, CustomerDTO customer, Connection connection) throws SQLException;
+
+    CustomerDTO getCustomer(String customerContact, Connection connection) throws Exception;
 }

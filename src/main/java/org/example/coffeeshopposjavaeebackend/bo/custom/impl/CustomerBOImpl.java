@@ -23,4 +23,9 @@ public class CustomerBOImpl implements CustomerBO {
         var customerDAOImpl = new CustomerDAOImpl();
         return customerDAOImpl.updateCustomer(customerContact,customer,connection);
     }
+
+    public CustomerDTO getCustomer(String customerContact, Connection connection) throws Exception {
+        var customerDAOImpl = new CustomerDAOImpl();
+        return customerDAOImpl.getCustomer(customerContact,connection);
+    }
 }

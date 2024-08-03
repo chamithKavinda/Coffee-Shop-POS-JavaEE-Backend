@@ -13,6 +13,8 @@ public class CustomerDAOImpl implements CustomerDAO {
     public static String DELETE_CUSTOMER = "DELETE FROM customer where contact=?";
 
     public static String UPDATE_CUSTOMER = "UPDATE customer SET cust_id=?,cust_name=?,address=? WHERE contact=?";
+
+    public static String GET_CUSTOMER = "SELECT * FROM customer WHERE contact = ?";
     @Override
     public String saveCustomer(CustomerDTO customer, Connection connection) throws SQLException {
         try{
@@ -39,7 +41,7 @@ public class CustomerDAOImpl implements CustomerDAO {
         return sc.executeUpdate() !=0;
     }
 
-
+    @Override
     public boolean updateCustomer(String customerContact, CustomerDTO customer, Connection connection) throws SQLException{
         try{
             var sc = connection.prepareStatement(UPDATE_CUSTOMER);
@@ -49,6 +51,24 @@ public class CustomerDAOImpl implements CustomerDAO {
             sc.setString(4, customer.getCustContact());
             return sc.executeUpdate() !=0;
         }catch (SQLException e){
+            throw new SQLException(e.getMessage());
+        }
+    }
+
+    public CustomerDTO getCustomer(String customerContact, Connection connection) throws Exception {
+        try {
+            CustomerDTO customerDTO = new CustomerDTO();
+            var sc = connection.prepareStatement(GET_CUSTOMER);
+            sc.setString(1,customerContact);
+            var rst = sc.executeQuery();
+            while (rst.next()){
+                customerDTO.setCustId(rst.getString("custId"));
+                customerDTO.setCustName(rst.getString("custName"));
+                customerDTO.setCustAddress(rst.getString("custAddress"));
+                customerDTO.setCustContact(rst.getString("custContact"));
+            }
+            return customerDTO;
+        }catch (Exception e){
             throw new SQLException(e.getMessage());
         }
     }
