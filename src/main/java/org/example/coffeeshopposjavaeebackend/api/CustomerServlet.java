@@ -53,6 +53,23 @@ public class CustomerServlet extends HttpServlet {
     }
 
     @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try(var write = resp.getWriter()){
+            var customerContact = req.getParameter("contact");
+            var customerBOImpl = new CustomerBOImpl();
+
+            if (customerBOImpl.deleteCustomer(customerContact,connection)){
+                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+            }else {
+                write.write("Delete Failed");
+                resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
     public void destroy() {
         try {
             if (connection != null && !connection.isClosed()) {

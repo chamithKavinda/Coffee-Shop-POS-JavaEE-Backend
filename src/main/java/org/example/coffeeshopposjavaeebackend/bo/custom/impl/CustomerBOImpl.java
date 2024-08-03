@@ -12,4 +12,9 @@ public class CustomerBOImpl implements CustomerBO {
         var customerDAOImpl = new CustomerDAOImpl();
         return customerDAOImpl.saveCustomer(customer,connection);
     }
+
+    public boolean deleteCustomer(String customerContact, Connection connection) throws Exception{
+        var customerDAOImpl = new CustomerDAOImpl();
+        return customerDAOImpl.deleteCustomer(customerContact,connection);
+    }
 }

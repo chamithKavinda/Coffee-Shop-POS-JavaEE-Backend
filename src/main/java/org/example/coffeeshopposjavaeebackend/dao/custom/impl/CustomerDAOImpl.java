@@ -9,9 +9,11 @@ import java.sql.SQLException;
 public class CustomerDAOImpl implements CustomerDAO {
 
     public static String SAVE_CUSTOMER = "INSERT INTO customer (cust_id,cust_name,address,contact) VALUES(?,?,?,?)";
+
+    public static String DELETE_CUSTOMER = "DELETE FROM customer where contact=?";
+
     @Override
     public String saveCustomer(CustomerDTO customer, Connection connection) throws SQLException {
-        System.out.println(customer.toString());
         try{
 
             var sc = connection.prepareStatement(SAVE_CUSTOMER);
@@ -29,5 +31,9 @@ public class CustomerDAOImpl implements CustomerDAO {
         }
     }
 
-
+    public boolean deleteCustomer(String contact, Connection connection) throws SQLException {
+        var sc = connection.prepareStatement(DELETE_CUSTOMER);
+        sc.setString(1,contact);
+        return sc.executeUpdate() !=0;
+    }
 }
