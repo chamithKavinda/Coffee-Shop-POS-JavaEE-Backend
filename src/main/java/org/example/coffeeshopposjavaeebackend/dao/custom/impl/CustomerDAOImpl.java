@@ -12,6 +12,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     public static String DELETE_CUSTOMER = "DELETE FROM customer where contact=?";
 
+    public static String UPDATE_CUSTOMER = "UPDATE customer SET cust_id=?,cust_name=?,address=? WHERE contact=?";
     @Override
     public String saveCustomer(CustomerDTO customer, Connection connection) throws SQLException {
         try{
@@ -31,9 +32,24 @@ public class CustomerDAOImpl implements CustomerDAO {
         }
     }
 
+    @Override
     public boolean deleteCustomer(String contact, Connection connection) throws SQLException {
         var sc = connection.prepareStatement(DELETE_CUSTOMER);
         sc.setString(1,contact);
         return sc.executeUpdate() !=0;
+    }
+
+
+    public boolean updateCustomer(String customerContact, CustomerDTO customer, Connection connection) throws SQLException{
+        try{
+            var sc = connection.prepareStatement(UPDATE_CUSTOMER);
+            sc.setString(1,customer.getCustId());
+            sc.setString(2,customer.getCustName());
+            sc.setString(3,customer.getCustAddress());
+            sc.setString(4, customer.getCustContact());
+            return sc.executeUpdate() !=0;
+        }catch (SQLException e){
+            throw new SQLException(e.getMessage());
+        }
     }
 }

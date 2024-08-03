@@ -5,6 +5,7 @@ import org.example.coffeeshopposjavaeebackend.dao.custom.impl.CustomerDAOImpl;
 import org.example.coffeeshopposjavaeebackend.dto.CustomerDTO;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 public class CustomerBOImpl implements CustomerBO {
     @Override
@@ -16,5 +17,10 @@ public class CustomerBOImpl implements CustomerBO {
     public boolean deleteCustomer(String customerContact, Connection connection) throws Exception{
         var customerDAOImpl = new CustomerDAOImpl();
         return customerDAOImpl.deleteCustomer(customerContact,connection);
+    }
+
+    public boolean updateCustomer(String customerContact, CustomerDTO customer, Connection connection) throws SQLException {
+        var customerDAOImpl = new CustomerDAOImpl();
+        return customerDAOImpl.updateCustomer(customerContact,customer,connection);
     }
 }
