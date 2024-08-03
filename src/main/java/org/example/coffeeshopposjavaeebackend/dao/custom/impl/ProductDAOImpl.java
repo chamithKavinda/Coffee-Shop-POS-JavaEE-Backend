@@ -8,6 +8,8 @@ import java.sql.SQLException;
 
 public class ProductDAOImpl implements ProductDAO {
     public static String SAVE_PRODUCT = "INSERT INTO product (pro_id,pro_name,price,category,quantity) VALUES(?,?,?,?,?)";
+
+    public static String DELETE_PRODUCT = "DELETE FROM product where pro_id=?";
     public String saveProduct(ProductDTO product , Connection connection) throws SQLException{
         try{
             var sc = connection.prepareStatement(SAVE_PRODUCT);
@@ -25,5 +27,11 @@ public class ProductDAOImpl implements ProductDAO {
         }catch (SQLException e){
             throw new SQLException(e.getMessage());
         }
+    }
+
+    public boolean deleteProduct(String proId, Connection connection) throws SQLException {
+        var sc = connection.prepareStatement(DELETE_PRODUCT);
+        sc.setString(1,proId);
+        return sc.executeUpdate() !=0;
     }
 }

@@ -8,4 +8,6 @@ import java.sql.SQLException;
 
 public interface ProductDAO extends CrudDAO {
     String saveProduct(ProductDTO product , Connection connection) throws SQLException;
+
+    boolean deleteProduct(String proId, Connection connection) throws SQLException;
 }

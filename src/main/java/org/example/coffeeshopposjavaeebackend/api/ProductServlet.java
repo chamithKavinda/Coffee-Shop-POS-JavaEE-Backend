@@ -51,4 +51,21 @@ public class ProductServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try(var write = resp.getWriter()){
+            var pro_id = req.getParameter("pro_id");
+            var productBOImpl = new ProductBOImpl();
+
+            if (productBOImpl.deleteProduct(pro_id,connection)){
+                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+            }else {
+                write.write("Delete Failed");
+                resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }
