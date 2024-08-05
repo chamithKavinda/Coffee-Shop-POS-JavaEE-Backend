@@ -1,6 +1,7 @@
 package org.example.coffeeshopposjavaeebackend.bo;
 
 import org.example.coffeeshopposjavaeebackend.bo.custom.impl.CustomerBOImpl;
+import org.example.coffeeshopposjavaeebackend.bo.custom.impl.OrdersBOImpl;
 import org.example.coffeeshopposjavaeebackend.bo.custom.impl.ProductBOImpl;
 
 public class BOFactory {
@@ -14,7 +15,8 @@ public class BOFactory {
 
     public enum BOTypes{
         CUSTOMER_BO,
-        PRODUCT_BO
+        PRODUCT_BO,
+        ORDERS_BO
     }
 
     public <T extends SuperBO> T getBO(BOTypes boTypes){
@@ -23,6 +25,8 @@ public class BOFactory {
                 return (T) new CustomerBOImpl();
             case PRODUCT_BO:
                 return (T) new ProductBOImpl();
+            case ORDERS_BO:
+                return (T) new OrdersBOImpl();
             default:
                 return null;
         }

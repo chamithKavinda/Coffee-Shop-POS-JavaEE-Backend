@@ -1,7 +1,9 @@
 package org.example.coffeeshopposjavaeebackend.dao;
 
 import org.example.coffeeshopposjavaeebackend.dao.custom.impl.CustomerDAOImpl;
+import org.example.coffeeshopposjavaeebackend.dao.custom.impl.OrdersDAOImpl;
 import org.example.coffeeshopposjavaeebackend.dao.custom.impl.ProductDAOImpl;
+import org.example.coffeeshopposjavaeebackend.dto.OrdersDTO;
 
 public class DAOFactory {
     private static DAOFactory daoFactory;
@@ -14,7 +16,8 @@ public class DAOFactory {
 
     public enum DAOTypes{
         CUSTOMER_DAO,
-        PRODUCT_DAO
+        PRODUCT_DAO,
+        ORDERS_DAO
     }
 
     public <T extends SuperDAO> T getDAO(DAOTypes daoTypes){
@@ -23,6 +26,8 @@ public class DAOFactory {
                 return (T) new CustomerDAOImpl();
             case PRODUCT_DAO:
                 return (T) new ProductDAOImpl();
+            case ORDERS_DAO:
+                return (T) new OrdersDAOImpl();
             default:
                 return null;
         }
