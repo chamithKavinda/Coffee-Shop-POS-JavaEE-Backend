@@ -2,9 +2,13 @@ package org.example.coffeeshopposjavaeebackend.dao.custom.impl;
 
 import org.example.coffeeshopposjavaeebackend.dao.custom.CustomerDAO;
 import org.example.coffeeshopposjavaeebackend.dto.CustomerDTO;
+import org.example.coffeeshopposjavaeebackend.entity.Customer;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CustomerDAOImpl implements CustomerDAO {
 
@@ -14,7 +18,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     public static String UPDATE_CUSTOMER = "UPDATE customer SET cust_id=?,cust_name=?,address=? WHERE contact=?";
 
-    public static String GET_CUSTOMER = "SELECT * FROM customer WHERE contact = ?";
+    public static String GET_CUSTOMER = "SELECT * FROM customer";
     @Override
     public String saveCustomer(CustomerDTO customer, Connection connection) throws SQLException {
         try{
@@ -55,19 +59,21 @@ public class CustomerDAOImpl implements CustomerDAO {
         }
     }
 
-    public CustomerDTO getCustomer(String customerContact, Connection connection) throws Exception {
+    public List<Customer> getCustomer(Connection connection) throws Exception {
         try {
             CustomerDTO customerDTO = new CustomerDTO();
             var sc = connection.prepareStatement(GET_CUSTOMER);
-            sc.setString(1,customerContact);
-            var rst = sc.executeQuery();
+            ResultSet rst = sc.executeQuery();
+            ArrayList<Customer> customers = new ArrayList<>();
+
             while (rst.next()){
-                customerDTO.setCustId(rst.getString("custId"));
-                customerDTO.setCustName(rst.getString("custName"));
-                customerDTO.setCustAddress(rst.getString("custAddress"));
-                customerDTO.setCustContact(rst.getString("custContact"));
+                customers.add(new Customer(
+                        rst.getString("cust_id"),
+                        rst.getString("cust_name"),
+                        rst.getString("address"),
+                        rst.getString("contact")));
             }
-            return customerDTO;
+            return customers;
         }catch (Exception e){
             throw new SQLException(e.getMessage());
         }

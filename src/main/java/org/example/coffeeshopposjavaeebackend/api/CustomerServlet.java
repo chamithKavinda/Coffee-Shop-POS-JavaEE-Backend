@@ -15,7 +15,6 @@ import javax.naming.NamingException;
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 
 @WebServlet(urlPatterns = "/customer",loadOnStartup = 2)
@@ -58,9 +57,9 @@ public class CustomerServlet extends HttpServlet {
             var customerBOImpl = new CustomerBOImpl();
             Jsonb jsonb = JsonbBuilder.create();
 
-            var customerContact = req.getParameter("customerContact");
+
             resp.setContentType("application/json");
-            jsonb.toJson(customerBOImpl.getCustomer(customerContact,connection),writer);
+            jsonb.toJson(customerBOImpl.getAllCustomer(connection),writer);
         }catch (Exception e){
             e.printStackTrace();
         }

@@ -5,6 +5,7 @@ import org.example.coffeeshopposjavaeebackend.dto.CustomerDTO;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 
 public interface CustomerBO extends SuperBO {
     String saveCustomer(CustomerDTO customer, Connection connection)throws Exception;
@@ -13,5 +14,5 @@ public interface CustomerBO extends SuperBO {
 
     boolean updateCustomer(String customerContact, CustomerDTO customer, Connection connection) throws SQLException;
 
-    CustomerDTO getCustomer(String customerContact, Connection connection) throws Exception;
+    List<CustomerDTO> getAllCustomer(Connection connection) throws Exception;
 }
