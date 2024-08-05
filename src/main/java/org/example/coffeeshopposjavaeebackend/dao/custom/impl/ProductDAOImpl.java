@@ -1,6 +1,7 @@
 package org.example.coffeeshopposjavaeebackend.dao.custom.impl;
 
 import org.example.coffeeshopposjavaeebackend.dao.custom.ProductDAO;
+import org.example.coffeeshopposjavaeebackend.dto.CustomerDTO;
 import org.example.coffeeshopposjavaeebackend.dto.ProductDTO;
 
 import java.sql.Connection;
@@ -12,6 +13,8 @@ public class ProductDAOImpl implements ProductDAO {
     public static String DELETE_PRODUCT = "DELETE FROM product where pro_id=?";
 
     public static String UPDATE_PRODUCT = "UPDATE product SET pro_name=?, price=?, category=?, quantity=? WHERE pro_id=?";
+
+    public static String GET_PRODUCT = "SELECT * FROM product WHERE pro_id = ?";
 
     public String saveProduct(ProductDTO product , Connection connection) throws SQLException{
         try{
@@ -48,6 +51,25 @@ public class ProductDAOImpl implements ProductDAO {
             sc.setString(5,product.getQuantity());
             return sc.executeUpdate() !=0;
         }catch (SQLException e){
+            throw new SQLException(e.getMessage());
+        }
+    }
+
+    public ProductDTO getProduct(String proId, Connection connection) throws SQLException {
+        try {
+            ProductDTO productDTO = new ProductDTO();
+            var sc = connection.prepareStatement(GET_PRODUCT);
+            sc.setString(1,proId);
+            var rst = sc.executeQuery();
+            while (rst.next()){
+                productDTO.setPro_id(rst.getString("pro_id"));
+                productDTO.setPro_name(rst.getString("pro_name"));
+                productDTO.setPrice(rst.getString("price"));
+                productDTO.setCategory(rst.getString("category"));
+                productDTO.setQuantity(rst.getString("quantity"));
+            }
+            return productDTO;
+        }catch (Exception e){
             throw new SQLException(e.getMessage());
         }
     }

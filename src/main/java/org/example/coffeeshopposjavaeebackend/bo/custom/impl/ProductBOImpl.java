@@ -23,4 +23,9 @@ public class ProductBOImpl implements ProductBO {
         var productDAOImpl = new ProductDAOImpl();
         return productDAOImpl.updateProduct(proId,product,connection);
     }
+
+    public ProductDTO getProduct(String proId, Connection connection) throws Exception{
+        var productDAOImpl = new ProductDAOImpl();
+        return productDAOImpl.getProduct(proId,connection);
+    }
 }
