@@ -15,7 +15,6 @@ public class ProductDAOImpl implements ProductDAO {
     public static String UPDATE_PRODUCT = "UPDATE product SET pro_name=?, price=?, category=?, quantity=? WHERE pro_id=?";
 
     public static String GET_PRODUCT = "SELECT * FROM product WHERE pro_id = ?";
-
     public String saveProduct(ProductDTO product , Connection connection) throws SQLException{
         try{
             var sc = connection.prepareStatement(SAVE_PRODUCT);
