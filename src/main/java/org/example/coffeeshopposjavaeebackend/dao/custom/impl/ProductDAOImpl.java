@@ -43,11 +43,11 @@ public class ProductDAOImpl implements ProductDAO {
     public boolean updateProduct(String proId, ProductDTO product, Connection connection) throws SQLException {
         try{
             var sc = connection.prepareStatement(UPDATE_PRODUCT);
-            sc.setString(1,product.getPro_id());
-            sc.setString(2,product.getPro_name());
-            sc.setString(3,product.getPrice());
-            sc.setString(4,product.getCategory());
-            sc.setString(5,product.getQuantity());
+            sc.setString(1,product.getPro_name());
+            sc.setString(2,product.getPrice());
+            sc.setString(3,product.getCategory());
+            sc.setString(4,product.getQuantity());
+            sc.setString(5,product.getPro_id());
             return sc.executeUpdate() !=0;
         }catch (SQLException e){
             throw new SQLException(e.getMessage());

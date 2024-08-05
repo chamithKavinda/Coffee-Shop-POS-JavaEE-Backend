@@ -76,6 +76,8 @@ public class ProductServlet extends HttpServlet {
             var pro_id = req.getParameter("pro_id");
             Jsonb jsonb = JsonbBuilder.create();
             ProductDTO product = jsonb.fromJson(req.getReader(), ProductDTO.class);
+            System.out.println(pro_id);
+            System.out.println(product.getQuantity());
 
             if(productBOImpl.updateProduct(pro_id,product,connection)){
                 resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
