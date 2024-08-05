@@ -10,6 +10,9 @@ public class ProductDAOImpl implements ProductDAO {
     public static String SAVE_PRODUCT = "INSERT INTO product (pro_id,pro_name,price,category,quantity) VALUES(?,?,?,?,?)";
 
     public static String DELETE_PRODUCT = "DELETE FROM product where pro_id=?";
+
+    public static String UPDATE_PRODUCT = "UPDATE product SET pro_name=?, price=?, category=?, quantity=? WHERE pro_id=?";
+
     public String saveProduct(ProductDTO product , Connection connection) throws SQLException{
         try{
             var sc = connection.prepareStatement(SAVE_PRODUCT);
@@ -33,5 +36,19 @@ public class ProductDAOImpl implements ProductDAO {
         var sc = connection.prepareStatement(DELETE_PRODUCT);
         sc.setString(1,proId);
         return sc.executeUpdate() !=0;
+    }
+
+    public boolean updateProduct(String proId, ProductDTO product, Connection connection) throws SQLException {
+        try{
+            var sc = connection.prepareStatement(UPDATE_PRODUCT);
+            sc.setString(1,product.getPro_id());
+            sc.setString(2,product.getPro_name());
+            sc.setString(3,product.getPrice());
+            sc.setString(4,product.getCategory());
+            sc.setString(5,product.getQuantity());
+            return sc.executeUpdate() !=0;
+        }catch (SQLException e){
+            throw new SQLException(e.getMessage());
+        }
     }
 }

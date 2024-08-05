@@ -68,4 +68,24 @@ public class ProductServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
+    @Override
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try (var write = resp.getWriter()){
+            var productBOImpl = new ProductBOImpl();
+            var pro_id = req.getParameter("pro_id");
+            Jsonb jsonb = JsonbBuilder.create();
+            ProductDTO product = jsonb.fromJson(req.getReader(), ProductDTO.class);
+
+            if(productBOImpl.updateProduct(pro_id,product,connection)){
+                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+            }else {
+                write.write("Update Failed");
+                resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 }

@@ -10,4 +10,6 @@ public interface ProductDAO extends CrudDAO {
     String saveProduct(ProductDTO product , Connection connection) throws SQLException;
 
     boolean deleteProduct(String proId, Connection connection) throws SQLException;
+
+    boolean updateProduct(String proId, ProductDTO product, Connection connection) throws SQLException;
 }
