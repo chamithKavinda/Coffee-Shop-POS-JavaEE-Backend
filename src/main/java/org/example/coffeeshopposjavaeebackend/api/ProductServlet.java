@@ -96,9 +96,8 @@ public class ProductServlet extends HttpServlet {
             var productBOImpl = new ProductBOImpl();
             Jsonb jsonb = JsonbBuilder.create();
 
-            var pro_id = req.getParameter("pro_id");
             resp.setContentType("application/json");
-            jsonb.toJson(productBOImpl.getProduct(pro_id,connection),writer);
+            jsonb.toJson(productBOImpl.getAllProduct(connection),writer);
         }catch (Exception e){
             e.printStackTrace();
         }

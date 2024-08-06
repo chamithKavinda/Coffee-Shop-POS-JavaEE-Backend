@@ -43,6 +43,5 @@ public class CustomerBOImpl implements CustomerBO {
             ));
         }
         return customerDTOS;
-
     }
 }

@@ -3,9 +3,13 @@ package org.example.coffeeshopposjavaeebackend.dao.custom.impl;
 import org.example.coffeeshopposjavaeebackend.dao.custom.ProductDAO;
 import org.example.coffeeshopposjavaeebackend.dto.CustomerDTO;
 import org.example.coffeeshopposjavaeebackend.dto.ProductDTO;
+import org.example.coffeeshopposjavaeebackend.entity.Product;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProductDAOImpl implements ProductDAO {
     public static String SAVE_PRODUCT = "INSERT INTO product (pro_id,pro_name,price,category,quantity) VALUES(?,?,?,?,?)";
@@ -14,7 +18,7 @@ public class ProductDAOImpl implements ProductDAO {
 
     public static String UPDATE_PRODUCT = "UPDATE product SET pro_name=?, price=?, category=?, quantity=? WHERE pro_id=?";
 
-    public static String GET_PRODUCT = "SELECT * FROM product WHERE pro_id = ?";
+    public static String GET_PRODUCT = "SELECT * FROM product";
     public String saveProduct(ProductDTO product , Connection connection) throws SQLException{
         try{
             var sc = connection.prepareStatement(SAVE_PRODUCT);
@@ -54,20 +58,22 @@ public class ProductDAOImpl implements ProductDAO {
         }
     }
 
-    public ProductDTO getProduct(String proId, Connection connection) throws SQLException {
+    public List<Product> getAllProduct(Connection connection) throws SQLException {
         try {
             ProductDTO productDTO = new ProductDTO();
             var sc = connection.prepareStatement(GET_PRODUCT);
-            sc.setString(1,proId);
-            var rst = sc.executeQuery();
+            ResultSet rst = sc.executeQuery();
+            ArrayList<Product> products = new ArrayList<>();
+
             while (rst.next()){
-                productDTO.setPro_id(rst.getString("pro_id"));
-                productDTO.setPro_name(rst.getString("pro_name"));
-                productDTO.setPrice(rst.getString("price"));
-                productDTO.setCategory(rst.getString("category"));
-                productDTO.setQuantity(rst.getString("quantity"));
+                products.add(new Product(
+                        rst.getString("pro_id"),
+                        rst.getString("pro_name"),
+                        rst.getString("price"),
+                        rst.getString("category"),
+                        rst.getString("quantity")));
             }
-            return productDTO;
+            return products;
         }catch (Exception e){
             throw new SQLException(e.getMessage());
         }

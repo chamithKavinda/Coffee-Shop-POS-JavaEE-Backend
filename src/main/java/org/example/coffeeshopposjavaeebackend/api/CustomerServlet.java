@@ -57,7 +57,6 @@ public class CustomerServlet extends HttpServlet {
             var customerBOImpl = new CustomerBOImpl();
             Jsonb jsonb = JsonbBuilder.create();
 
-
             resp.setContentType("application/json");
             jsonb.toJson(customerBOImpl.getAllCustomer(connection),writer);
         }catch (Exception e){
