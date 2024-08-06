@@ -7,6 +7,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.example.coffeeshopposjavaeebackend.bo.BOFactory;
+import org.example.coffeeshopposjavaeebackend.bo.custom.ProductBO;
 import org.example.coffeeshopposjavaeebackend.bo.custom.impl.CustomerBOImpl;
 import org.example.coffeeshopposjavaeebackend.bo.custom.impl.ProductBOImpl;
 import org.example.coffeeshopposjavaeebackend.dto.CustomerDTO;
@@ -21,6 +23,8 @@ import java.sql.SQLException;
 
 @WebServlet(urlPatterns = "/product",loadOnStartup = 2)
 public class ProductServlet extends HttpServlet {
+
+    ProductBO productBO = BOFactory.getBoFactory().getBO(BOFactory.BOTypes.PRODUCT_BO);
     Connection connection;
 
     @Override
@@ -41,10 +45,9 @@ public class ProductServlet extends HttpServlet {
         }
         try(var write = resp.getWriter()){
             Jsonb jsonb = JsonbBuilder.create();
-            var productBOImpl = new ProductBOImpl();
             ProductDTO product = jsonb.fromJson(req.getReader(), ProductDTO.class);
 
-            write.write(productBOImpl.saveProduct(product,connection));
+            write.write(productBO.saveProduct(product,connection));
             resp.setStatus(HttpServletResponse.SC_CREATED);
         }catch (Exception e){
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
@@ -56,9 +59,8 @@ public class ProductServlet extends HttpServlet {
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try(var write = resp.getWriter()){
             var pro_id = req.getParameter("pro_id");
-            var productBOImpl = new ProductBOImpl();
 
-            if (productBOImpl.deleteProduct(pro_id,connection)){
+            if (productBO.deleteProduct(pro_id,connection)){
                 resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
             }else {
                 write.write("Delete Failed");
@@ -72,14 +74,13 @@ public class ProductServlet extends HttpServlet {
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try (var write = resp.getWriter()){
-            var productBOImpl = new ProductBOImpl();
             var pro_id = req.getParameter("pro_id");
             Jsonb jsonb = JsonbBuilder.create();
             ProductDTO product = jsonb.fromJson(req.getReader(), ProductDTO.class);
             System.out.println(pro_id);
             System.out.println(product.getQuantity());
 
-            if(productBOImpl.updateProduct(pro_id,product,connection)){
+            if(productBO.updateProduct(pro_id,product,connection)){
                 resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
             }else {
                 write.write("Update Failed");
@@ -93,11 +94,10 @@ public class ProductServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try (var writer = resp.getWriter()){
-            var productBOImpl = new ProductBOImpl();
             Jsonb jsonb = JsonbBuilder.create();
 
             resp.setContentType("application/json");
-            jsonb.toJson(productBOImpl.getAllProduct(connection),writer);
+            jsonb.toJson(productBO.getAllProduct(connection),writer);
         }catch (Exception e){
             e.printStackTrace();
         }

@@ -7,6 +7,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.example.coffeeshopposjavaeebackend.bo.BOFactory;
+import org.example.coffeeshopposjavaeebackend.bo.custom.CustomerBO;
 import org.example.coffeeshopposjavaeebackend.bo.custom.impl.CustomerBOImpl;
 import org.example.coffeeshopposjavaeebackend.dto.CustomerDTO;
 
@@ -20,6 +22,7 @@ import java.sql.SQLException;
 @WebServlet(urlPatterns = "/customer",loadOnStartup = 2)
 public class CustomerServlet extends HttpServlet {
 
+    CustomerBO customerBO = BOFactory.getBoFactory().getBO(BOFactory.BOTypes.CUSTOMER_BO);
     Connection connection;
 
     @Override
@@ -40,10 +43,9 @@ public class CustomerServlet extends HttpServlet {
         }
         try(var write = resp.getWriter()){
             Jsonb jsonb = JsonbBuilder.create();
-            var customerBOImpl = new CustomerBOImpl();
             CustomerDTO customer = jsonb.fromJson(req.getReader(), CustomerDTO.class);
 
-            write.write(customerBOImpl.saveCustomer(customer,connection));
+            write.write(customerBO.saveCustomer(customer,connection));
             resp.setStatus(HttpServletResponse.SC_CREATED);
         }catch (Exception e){
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
@@ -54,11 +56,10 @@ public class CustomerServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try (var writer = resp.getWriter()){
-            var customerBOImpl = new CustomerBOImpl();
             Jsonb jsonb = JsonbBuilder.create();
 
             resp.setContentType("application/json");
-            jsonb.toJson(customerBOImpl.getAllCustomer(connection),writer);
+            jsonb.toJson(customerBO.getAllCustomer(connection),writer);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -68,9 +69,8 @@ public class CustomerServlet extends HttpServlet {
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try(var write = resp.getWriter()){
             var customerContact = req.getParameter("contact");
-            var customerBOImpl = new CustomerBOImpl();
 
-            if (customerBOImpl.deleteCustomer(customerContact,connection)){
+            if (customerBO.deleteCustomer(customerContact,connection)){
                 resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
             }else {
                 write.write("Delete Failed");
@@ -84,12 +84,11 @@ public class CustomerServlet extends HttpServlet {
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try (var write = resp.getWriter()){
-            var customerBOImpl = new CustomerBOImpl();
             var customerContact = req.getParameter("contact");
             Jsonb jsonb = JsonbBuilder.create();
             CustomerDTO customer = jsonb.fromJson(req.getReader(),CustomerDTO.class);
 
-            if(customerBOImpl.updateCustomer(customerContact,customer,connection)){
+            if(customerBO.updateCustomer(customerContact,customer,connection)){
                 resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
             }else {
                 write.write("Update Failed");
