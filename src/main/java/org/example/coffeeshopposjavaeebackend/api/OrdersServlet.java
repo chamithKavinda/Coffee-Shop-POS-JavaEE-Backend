@@ -59,4 +59,17 @@ public class OrdersServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.debug("Received GET request for all Orders");
+        try (var writer = resp.getWriter()){
+            Jsonb jsonb = JsonbBuilder.create();
+
+            resp.setContentType("application/json");
+            jsonb.toJson(ordersBO.getAllOrders(connection),writer);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }
