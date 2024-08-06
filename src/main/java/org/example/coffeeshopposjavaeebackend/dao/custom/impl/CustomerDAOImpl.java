@@ -29,7 +29,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             sc.setString(3,customer.getCustAddress());
             sc.setString(4, customer.getCustContact());
             if(sc.executeUpdate() != 0){
-                return "Student Save Successfully";
+                return "Customer Save Successfully";
             }else {
                 return "Failed to Save Student";
             }

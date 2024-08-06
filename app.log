@@ -4,3 +4,21 @@
 12:16:07.437 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
 12:16:07.496 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
 12:16:07.530 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+22:51:51.010 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+22:51:51.094 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+22:51:51.137 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+22:54:15.918 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+22:57:42.353 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+22:58:37.452 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+23:01:12.867 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+23:01:12.921 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+23:01:12.959 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+23:01:22.037 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+23:01:39.138 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+23:08:31.756 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+23:08:31.828 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+23:08:31.869 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+23:08:41.678 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+23:08:55.638 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+23:09:10.176 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+23:09:17.885 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
