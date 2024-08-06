@@ -46,6 +46,7 @@ public class ProductServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.debug("Received POST request for Products");
         if(req.getContentType() == null || !req.getContentType().toLowerCase().startsWith("application/json")){
             resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
         }
@@ -63,6 +64,7 @@ public class ProductServlet extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.debug("Received DELETE request for Products");
         try(var write = resp.getWriter()){
             var pro_id = req.getParameter("pro_id");
 
@@ -79,6 +81,7 @@ public class ProductServlet extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.debug("Received Update request for Products");
         try (var write = resp.getWriter()){
             var pro_id = req.getParameter("pro_id");
             Jsonb jsonb = JsonbBuilder.create();
@@ -99,6 +102,7 @@ public class ProductServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.debug("Received Get All request for Products");
         try (var writer = resp.getWriter()){
             Jsonb jsonb = JsonbBuilder.create();
 

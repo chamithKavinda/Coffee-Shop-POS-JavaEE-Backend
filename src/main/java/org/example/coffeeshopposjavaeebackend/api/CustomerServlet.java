@@ -44,6 +44,7 @@ public class CustomerServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.debug("Received POST request for Customer");
         if(req.getContentType() == null || !req.getContentType().toLowerCase().startsWith("application/json")){
             resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
         }
@@ -61,6 +62,7 @@ public class CustomerServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.debug("Received GET request for all Customers");
         try (var writer = resp.getWriter()){
             Jsonb jsonb = JsonbBuilder.create();
 
@@ -73,6 +75,7 @@ public class CustomerServlet extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.debug("Received DELETE Request for Customer");
         try(var write = resp.getWriter()){
             var customerContact = req.getParameter("contact");
 
@@ -89,6 +92,7 @@ public class CustomerServlet extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.debug("Received PUT Request for Customer");
         try (var write = resp.getWriter()){
             var customerContact = req.getParameter("contact");
             Jsonb jsonb = JsonbBuilder.create();
