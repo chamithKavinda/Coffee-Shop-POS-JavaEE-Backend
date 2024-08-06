@@ -11,6 +11,8 @@ import org.example.coffeeshopposjavaeebackend.bo.BOFactory;
 import org.example.coffeeshopposjavaeebackend.bo.custom.CustomerBO;
 import org.example.coffeeshopposjavaeebackend.bo.custom.impl.CustomerBOImpl;
 import org.example.coffeeshopposjavaeebackend.dto.CustomerDTO;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -23,6 +25,8 @@ import java.sql.SQLException;
 public class CustomerServlet extends HttpServlet {
 
     CustomerBO customerBO = BOFactory.getBoFactory().getBO(BOFactory.BOTypes.CUSTOMER_BO);
+
+    static Logger logger = LoggerFactory.getLogger(CustomerServlet.class);
     Connection connection;
 
     @Override
@@ -31,7 +35,9 @@ public class CustomerServlet extends HttpServlet {
             var ctx = new InitialContext();
             DataSource pool = (DataSource) ctx.lookup("java:comp/env/jdbc/pos");
             this.connection = pool.getConnection();
+            logger.info("Connection initialized",this.connection);
         } catch (SQLException |NamingException e){
+            logger.error("DB connection not init");
             e.printStackTrace();
         }
     }

@@ -1,0 +1,6 @@
+11:59:27.228 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+12:14:19.309 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+12:14:19.372 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+12:16:07.437 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+12:16:07.496 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+12:16:07.530 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
