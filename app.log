@@ -26,3 +26,7 @@
 23:24:36.690 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
 23:24:36.728 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
 23:25:02.552 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Orders
+12:02:56.446 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+12:02:56.580 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+12:02:56.622 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+12:03:13.131 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Orders
