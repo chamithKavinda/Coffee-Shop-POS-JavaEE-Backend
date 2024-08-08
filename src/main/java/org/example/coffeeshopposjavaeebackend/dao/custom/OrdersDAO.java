@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface OrdersDAO extends CrudDAO {
-    String saveOrder(OrdersDTO order, Connection connection) throws SQLException;
+    boolean saveOrder(Orders order, Connection connection) throws SQLException;
 
-    List<Orders> getAllOrders(Connection connection) throws Exception;
+    String generateNextId(Connection connection) throws SQLException;
 }

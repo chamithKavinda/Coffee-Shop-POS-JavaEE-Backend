@@ -30,3 +30,439 @@
 12:02:56.580 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
 12:02:56.622 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
 12:03:13.131 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Orders
+14:02:58.476 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+14:02:58.550 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+14:02:58.594 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+14:02:58.627 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+14:03:11.850 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all OrderDetails
+14:03:25.696 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all OrderDetails
+21:21:38.418 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+21:21:38.574 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+21:21:38.615 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+21:21:38.666 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+21:21:49.126 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received POST request for Customer
+11:16:11.153 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+11:16:11.249 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+11:16:11.278 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+11:16:11.308 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+11:17:32.401 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received POST request for Customer
+11:17:37.189 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+11:20:07.910 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received POST request for Customer
+11:20:09.832 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+11:28:42.487 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received POST request for Customer
+11:28:47.063 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+11:29:29.030 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received POST request for Customer
+11:29:32.137 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+11:30:06.137 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received PUT Request for Customer
+11:30:08.635 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+11:30:17.463 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received DELETE Request for Customer
+11:30:19.038 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received DELETE Request for Customer
+11:30:20.256 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received DELETE Request for Customer
+11:30:21.246 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received DELETE Request for Customer
+11:30:22.658 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received DELETE Request for Customer
+11:30:23.984 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received DELETE Request for Customer
+11:30:25.080 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received DELETE Request for Customer
+11:30:26.258 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received DELETE Request for Customer
+11:35:54.937 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received POST request for Customer
+11:35:56.676 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+11:36:40.327 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received DELETE Request for Customer
+13:18:27.968 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:18:38.102 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:19:06.924 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received POST request for Products
+13:19:09.347 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:19:45.584 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received POST request for Customer
+13:19:47.358 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+13:20:48.222 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received POST request for Products
+13:20:50.491 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:21:53.967 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received POST request for Products
+13:23:12.600 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received POST request for Products
+13:23:12.618 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received POST request for Products
+13:23:24.430 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:26:48.387 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:27:01.883 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:27:04.164 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:27:06.484 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:27:08.597 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:28:25.092 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:28:30.218 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:28:33.804 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:28:51.732 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Update request for Products
+13:28:53.723 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:28:56.827 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received DELETE request for Products
+13:29:23.140 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received POST request for Products
+13:29:24.968 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:29:48.574 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:29:52.299 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+13:29:52.303 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:29:53.476 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+13:29:53.477 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:30:19.873 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+13:30:19.875 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:30:27.107 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+13:30:27.108 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:31:02.578 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+13:31:02.579 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:31:04.134 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+13:31:04.134 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+13:31:06.143 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+13:31:06.145 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:37:26.239 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:37:26.240 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:37:31.144 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:37:31.144 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:37:33.408 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:37:33.409 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:37:34.636 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:37:34.638 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:37:36.762 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:37:36.766 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:38:34.702 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:38:34.704 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:38:36.959 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:38:36.959 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:38:40.465 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:38:40.466 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:38:42.355 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:38:42.356 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:38:47.759 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:38:47.762 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:38:50.865 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:38:50.868 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:38:53.399 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:38:53.400 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:38:58.149 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:38:58.156 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:38:59.338 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:38:59.339 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:39:10.702 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:39:10.703 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:39:13.653 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:39:13.654 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:39:15.992 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:39:15.993 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:39:17.584 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:39:17.586 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:39:19.274 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:39:19.276 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:07.441 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:07.450 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:07.863 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:07.865 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:10.221 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:10.222 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:11.785 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:11.786 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:18.300 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:18.300 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:24.489 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:24.490 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:26.086 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:26.087 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:30.032 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:30.034 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:33.793 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:33.796 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:36.671 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:36.672 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:46.066 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:46.066 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:47.526 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:47.529 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:40:49.160 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:40:49.171 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:41:05.754 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:41:05.756 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:41:07.379 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:41:07.383 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:41:08.553 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:41:08.555 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:41:20.572 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:41:20.575 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:41:23.430 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:41:23.430 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:41:31.613 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:41:31.614 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:41:34.519 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:41:34.522 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:41:41.372 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:41:41.372 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:41:44.555 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:41:44.563 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:41:57.401 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:41:57.401 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:42:08.592 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:42:08.595 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:42:10.206 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:42:10.209 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:42:11.975 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:42:11.978 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:42:17.894 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:42:17.894 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:42:20.127 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:42:20.129 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:42:21.101 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:42:21.102 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:43:08.745 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:43:08.749 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:43:15.987 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:43:15.988 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:43:17.347 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:43:17.349 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:43:19.301 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:43:19.303 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:43:29.042 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:43:29.046 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:43:30.607 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:43:30.621 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:43:34.902 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:43:34.903 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:01.964 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:01.967 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:03.714 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:03.716 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:08.956 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:08.970 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:11.920 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:11.920 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:19.262 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:19.264 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:21.913 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:21.913 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:22.925 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:22.925 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:26.026 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:26.028 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:29.310 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:29.310 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:36.917 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:36.949 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:38.266 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:38.270 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:44.121 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:44.122 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:47.851 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:47.854 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:52.015 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:52.016 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:55.215 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:55.225 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:44:59.039 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:44:59.041 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:45:03.528 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:45:03.530 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:45:04.691 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:45:04.694 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:45:07.570 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:45:07.573 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:45:23.190 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:45:23.190 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:45:39.271 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:45:39.271 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:46:41.910 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:46:41.910 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:47:07.827 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received DELETE request for Products
+14:50:00.692 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:00.701 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:01.871 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:01.873 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:08.086 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:08.087 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:15.352 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:15.353 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:20.642 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:20.643 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:22.311 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:22.313 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:23.589 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:23.596 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:25.492 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:25.494 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:28.362 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:28.365 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:31.744 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:31.748 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:33.039 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:33.043 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:45.677 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:45.680 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:48.716 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:48.720 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:50:51.793 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:50:51.797 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:11.654 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:11.654 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:13.744 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:13.745 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:15.752 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:15.753 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:19.859 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:19.861 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:23.927 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:23.929 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:28.926 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:28.931 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:31.593 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:31.595 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:33.933 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:33.934 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:39.204 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:39.208 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:44.633 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:44.634 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:47.485 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:47.487 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:49.402 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:49.404 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:52.726 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:52.726 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:55:54.805 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:55:54.811 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:56:00.351 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:56:00.352 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:56:02.684 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:56:02.689 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:56:05.048 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:56:05.056 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:56:06.650 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:56:06.652 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:57:49.721 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:57:49.723 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:57:52.411 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:57:52.412 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:57:53.735 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:57:53.736 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:57:59.117 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:57:59.117 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:02.338 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:02.339 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:03.704 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:03.705 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:06.487 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:06.488 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:07.730 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:07.731 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:10.356 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:10.359 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:14.155 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:14.156 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:20.661 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:20.663 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:23.320 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:23.320 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:26.027 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:26.028 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:27.593 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:27.597 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:29.511 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:29.511 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:30.877 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:30.879 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:34.351 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:34.353 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:36.428 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:36.435 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:38.279 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:38.280 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:43.138 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:43.149 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:46.604 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:46.605 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:49.079 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:49.080 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:50.426 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:50.427 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:52.038 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:52.038 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:53.984 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:53.987 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:56.624 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:56.625 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:58:59.460 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:58:59.463 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+14:59:05.091 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+14:59:05.097 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+15:49:25.922 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received PUT Request for Customer
+15:49:28.144 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+15:49:31.865 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received DELETE Request for Customer
+15:49:46.998 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received DELETE request for Products
+20:41:02.873 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:41:02.873 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:41:05.080 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:41:05.080 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:35.619 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:35.619 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:41.309 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:41.311 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:43.369 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:43.370 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:43.381 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:43.381 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:49.307 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:49.308 [http-nio-8080-exec-10] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:49.343 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:49.356 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:49.913 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:49.916 [http-nio-8080-exec-5] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:49.972 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:49.976 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:50.372 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:50.382 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:50.409 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:50.420 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:50.735 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:50.739 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:50.760 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:50.764 [http-nio-8080-exec-3] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:51.056 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:51.058 [http-nio-8080-exec-6] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:51.085 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:51.099 [http-nio-8080-exec-1] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:51.419 [http-nio-8080-exec-10] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:51.425 [http-nio-8080-exec-2] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+20:45:51.467 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+20:45:51.472 [http-nio-8080-exec-4] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+21:52:11.590 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+21:52:11.678 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+21:52:11.744 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+21:52:11.797 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+22:02:53.839 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+22:02:53.896 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+22:02:53.932 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+22:02:53.972 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+22:03:27.293 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+00:07:21.544 [http-nio-8080-exec-9] DEBUG o.e.c.api.ProductServlet - Received POST request for Products
+00:13:34.025 [http-nio-8080-exec-2] DEBUG o.e.c.api.CustomerServlet - Received GET request for all OrderDetails
+00:13:47.584 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Orders
+00:13:52.466 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+00:19:12.960 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+00:19:12.977 [http-nio-8080-exec-7] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+00:19:13.015 [http-nio-8080-exec-8] DEBUG o.e.c.api.ProductServlet - Received Get All request for Products
+00:19:13.086 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Customers
+00:23:03.644 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+00:23:55.456 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+00:24:51.592 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+00:29:48.759 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+00:29:48.848 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+00:29:48.897 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+00:29:48.947 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+00:30:16.147 [http-nio-8080-exec-5] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Orders
+00:30:27.636 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received GET request for all Orders
+00:32:46.757 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+00:32:46.835 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+00:32:46.877 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+00:32:46.922 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+00:32:59.389 [http-nio-8080-exec-8] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+00:34:38.063 [http-nio-8080-exec-1] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+00:34:56.815 [http-nio-8080-exec-3] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+00:35:18.978 [http-nio-8080-exec-6] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+00:35:33.819 [http-nio-8080-exec-7] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+00:36:50.287 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+00:36:50.349 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+00:36:50.395 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+00:36:50.437 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+00:37:09.003 [http-nio-8080-exec-4] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+00:44:45.749 [http-nio-8080-exec-9] DEBUG o.e.c.api.CustomerServlet - Received Post Request for Order
+01:30:14.446 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+01:30:14.535 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.ProductServlet - Connection initialized
+01:30:14.598 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized
+01:30:14.659 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.c.api.CustomerServlet - Connection initialized

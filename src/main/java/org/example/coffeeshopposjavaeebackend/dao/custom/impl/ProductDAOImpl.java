@@ -1,6 +1,7 @@
 package org.example.coffeeshopposjavaeebackend.dao.custom.impl;
 
 import org.example.coffeeshopposjavaeebackend.dao.custom.ProductDAO;
+import org.example.coffeeshopposjavaeebackend.dao.custom.impl.util.SQLUtil;
 import org.example.coffeeshopposjavaeebackend.dto.CustomerDTO;
 import org.example.coffeeshopposjavaeebackend.dto.ProductDTO;
 import org.example.coffeeshopposjavaeebackend.entity.Product;
@@ -78,4 +79,33 @@ public class ProductDAOImpl implements ProductDAO {
             throw new SQLException(e.getMessage());
         }
     }
+
+    @Override
+    public Product search(Connection connection, String proId) throws SQLException {
+        String sql =  "SELECT * FROM product WHERE pro_id = ?";
+        ResultSet resultSet = SQLUtil.execute(sql, connection, proId);
+        if (resultSet.next()) {
+            return new Product(
+                    resultSet.getString(1),
+                    resultSet.getString(2),
+                    resultSet.getString(3),
+                    resultSet.getString(4),
+                    resultSet.getString(5)
+            );
+        }
+        return null;
+    }
+
+    @Override
+    public boolean update(Connection connection, Product product) throws SQLException {
+        String sql = "UPDATE product SET pro_name=?, price=?, category=?, quantity=? WHERE pro_id=?";
+        return SQLUtil.execute(sql, connection,
+                product.getPro_name(),
+                product.getPrice(),
+                product.getCategory(),
+                product.getQuantity(),
+                product.getPro_id()
+                );
+    }
+
 }

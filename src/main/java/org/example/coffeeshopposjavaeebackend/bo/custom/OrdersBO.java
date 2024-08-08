@@ -4,10 +4,12 @@ import org.example.coffeeshopposjavaeebackend.bo.SuperBO;
 import org.example.coffeeshopposjavaeebackend.dto.OrdersDTO;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.List;
 
 public interface OrdersBO extends SuperBO {
-    String saveOrder(OrdersDTO order, Connection connection) throws Exception;
+    boolean purchseOrder(OrdersDTO order, Connection connection) throws Exception;
 
-    List<OrdersDTO> getAllOrders(Connection connection) throws Exception;
+    String generateNewOrderID(Connection connection) throws SQLException;
+
 }

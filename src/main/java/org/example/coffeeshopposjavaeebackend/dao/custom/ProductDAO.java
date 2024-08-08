@@ -16,4 +16,8 @@ public interface ProductDAO extends CrudDAO {
     boolean updateProduct(String proId, ProductDTO product, Connection connection) throws SQLException;
 
     List<Product> getAllProduct(Connection connection) throws SQLException;
+
+    Product search(Connection connection, String proId) throws SQLException;
+
+    boolean update(Connection connection, Product product) throws SQLException;
 }

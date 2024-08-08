@@ -12,8 +12,8 @@ import java.time.LocalDateTime;
 public class Orders {
     private String order_id;
     private LocalDateTime dateAndTime;
-    private String custContact;
+    private String contact;
 
-    public Orders(String orderId, String dateAndTime, String custContact) {
+    public Orders(String orderId, String dateAndTime, String contact) {
     }
 }

@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -12,5 +13,7 @@ import java.time.LocalDateTime;
 public class OrdersDTO {
     private String order_id;
     private LocalDateTime dateAndTime;
-    private String custContact;
+    private String contact;
+    private List<OrderDetailsDTO> orderDetails;
+
 }

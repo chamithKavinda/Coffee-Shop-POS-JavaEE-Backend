@@ -52,7 +52,13 @@ public class OrdersServlet extends HttpServlet {
             Jsonb jsonb = JsonbBuilder.create();
             OrdersDTO order = jsonb.fromJson(req.getReader(), OrdersDTO.class);
 
-            write.write(ordersBO.saveOrder(order,connection));
+            boolean isSaved = ordersBO.purchseOrder(order, connection);
+            if (isSaved){
+                write.write("orderSaved");
+            }else {
+                write.write("not saved");
+            }
+
             resp.setStatus(HttpServletResponse.SC_CREATED);
         }catch (Exception e){
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
@@ -67,7 +73,7 @@ public class OrdersServlet extends HttpServlet {
             Jsonb jsonb = JsonbBuilder.create();
 
             resp.setContentType("application/json");
-            jsonb.toJson(ordersBO.getAllOrders(connection),writer);
+            jsonb.toJson(ordersBO.generateNewOrderID(connection),writer);
         }catch (Exception e){
             e.printStackTrace();
         }

@@ -3,6 +3,7 @@ package org.example.coffeeshopposjavaeebackend.bo.custom.impl;
 import org.example.coffeeshopposjavaeebackend.bo.custom.CustomerBO;
 import org.example.coffeeshopposjavaeebackend.dao.DAOFactory;
 import org.example.coffeeshopposjavaeebackend.dao.custom.CustomerDAO;
+import org.example.coffeeshopposjavaeebackend.dao.custom.ProductDAO;
 import org.example.coffeeshopposjavaeebackend.dao.custom.impl.CustomerDAOImpl;
 import org.example.coffeeshopposjavaeebackend.dto.CustomerDTO;
 import org.example.coffeeshopposjavaeebackend.entity.Customer;

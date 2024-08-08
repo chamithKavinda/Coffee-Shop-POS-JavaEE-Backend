@@ -2,6 +2,7 @@ package org.example.coffeeshopposjavaeebackend.dao.custom.impl;
 
 import org.example.coffeeshopposjavaeebackend.dao.CrudDAO;
 import org.example.coffeeshopposjavaeebackend.dao.custom.OrderDetailsDAO;
+import org.example.coffeeshopposjavaeebackend.dao.custom.impl.util.SQLUtil;
 import org.example.coffeeshopposjavaeebackend.dto.OrderDetailsDTO;
 import org.example.coffeeshopposjavaeebackend.dto.OrdersDTO;
 import org.example.coffeeshopposjavaeebackend.entity.OrderDetails;
@@ -35,5 +36,11 @@ public class OrderDetailsDAOImpl implements OrderDetailsDAO {
         }catch (Exception e){
             throw new SQLException(e.getMessage());
         }
+    }
+
+    @Override
+    public boolean save(Connection connection, OrderDetails entity) throws SQLException {
+        String sql = "INSERT INTO orderdetails VALUES(?, ?, ?,?)";
+        return SQLUtil.execute(sql, connection, entity.getOrder_id(), entity.getPro_id(), entity.getQty(),entity.getUnitPrice());
     }
 }
