@@ -64,7 +64,8 @@ Implemented using Java EE and hosted on the Apache Tomcat server, it ensures rob
 # Development Tools:
 * Maven: Build automation and project management tool (Version 4.0.0)
 
-## Frontend Implementation : https://github.com/chamithKavinda/Coffee-Shop-POS-System-FrontEnd
+### Frontend Implementation :
+https://github.com/chamithKavinda/Coffee-Shop-POS-System-FrontEnd
 
 # API Endpoint Documentation
 * Customer - https://documenter.getpostman.com/view/35385399/2sA3s1oryn
