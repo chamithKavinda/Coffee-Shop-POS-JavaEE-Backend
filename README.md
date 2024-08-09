@@ -3,7 +3,7 @@ Caffeine Corner is a comprehensive Point of Sale (POS) application designed spec
 product inventories, and order transactions. This project serves as an educational resource for mastering Java EE development.
 
 # Project Components
-##Front-end
+## Front-end
 The front-end of Caffeine Corner is crafted to offer a user-friendly interface with seamless interaction.
 It utilizes HTML, CSS, jQuery, and AJAX to create a dynamic web application, ensuring a smooth user experience.
 
