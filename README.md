@@ -5,7 +5,7 @@ product inventories, and order transactions. This project serves as an education
 # Project Components
 ## Front-end
 The front-end of Caffeine Corner is crafted to offer a user-friendly interface with seamless interaction.
-It utilizes HTML, CSS, jQuery, and AJAX to create a dynamic web application, ensuring a smooth user experience.
+It utilizes HTML, CSS, jQuery, and Fetch to create a dynamic web application, ensuring a smooth user experience.
 
 ## Back-end
 The back-end of Caffeine Corner handles server-side operations, data processing, and business logic. 
@@ -51,7 +51,7 @@ Implemented using Java EE and hosted on the Apache Tomcat server, it ensures rob
 - CSS
 - Bootstrap
 - jQuery
-- AJAX
+- Fetch
 
 ## Back-end:
 - Java EE
