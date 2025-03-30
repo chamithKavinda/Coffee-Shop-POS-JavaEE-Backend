@@ -73,3 +73,16 @@ https://github.com/chamithKavinda/Coffee-Shop-POS-System-FrontEnd
 * Order - https://documenter.getpostman.com/view/35385399/2sA3s3FqT3
 * Order Details - https://documenter.getpostman.com/view/35385399/2sA3s3FqT4
 
+## License
+
+This project is licensed under the MIT License. See the [License File](https://github.com/chamithKavinda/Coffee-Shop-POS-JavaEE-Backend?tab=MIT-1-ov-file) for details.
+
+---
+
+## Contact
+
+For questions or support, please contact:
+
+- **Name**: Chamith Kavinda  
+- **Email**: chamth13kavinda@gmail.com  
+- **GitHub**: [Chamith Kavinda](https://github.com/chamithKavinda)
