@@ -107,5 +107,4 @@ public class ProductDAOImpl implements ProductDAO {
                 product.getPro_id()
                 );
     }
-
 }

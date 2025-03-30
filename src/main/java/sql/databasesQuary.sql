@@ -1,4 +1,4 @@
-create database if not exists Coffee_Shop_POS;
+create database if not exists coffee_shop_pos;
 
 use coffee_shop_pos;
 

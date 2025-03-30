@@ -69,11 +69,6 @@ public class OrdersBOImpl implements OrdersBO {
 
     }
 
-
-
-
-
-
     @Override
     public String generateNewOrderID(Connection connection) throws SQLException {
         String lastOrderId = ordersDAO.generateNextId(connection);

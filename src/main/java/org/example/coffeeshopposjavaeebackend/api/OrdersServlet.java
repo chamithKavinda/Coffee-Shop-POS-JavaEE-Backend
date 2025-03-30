@@ -59,7 +59,7 @@ public class OrdersServlet extends HttpServlet {
                 write.write("not saved");
             }
 
-            resp.setStatus(HttpServletResponse.SC_CREATED);
+//            resp.setStatus(HttpServletResponse.SC_CREATED);
         }catch (Exception e){
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             e.printStackTrace();

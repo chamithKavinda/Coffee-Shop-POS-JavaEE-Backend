@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-@WebServlet(urlPatterns = "/customer",loadOnStartup = 2)
+@WebServlet(urlPatterns = "/customer")
 public class CustomerServlet extends HttpServlet {
 
     CustomerBO customerBO = BOFactory.getBoFactory().getBO(BOFactory.BOTypes.CUSTOMER_BO);
@@ -80,7 +80,8 @@ public class CustomerServlet extends HttpServlet {
             var customerContact = req.getParameter("contact");
 
             if (customerBO.deleteCustomer(customerContact,connection)){
-                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+//                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+                write.write("Customer Deleted");
             }else {
                 write.write("Delete Failed");
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
@@ -99,7 +100,8 @@ public class CustomerServlet extends HttpServlet {
             CustomerDTO customer = jsonb.fromJson(req.getReader(),CustomerDTO.class);
 
             if(customerBO.updateCustomer(customerContact,customer,connection)){
-                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+//                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+                write.write("Customer Update Sucessfully");
             }else {
                 write.write("Update Failed");
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);

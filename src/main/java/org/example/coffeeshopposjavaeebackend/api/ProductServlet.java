@@ -56,6 +56,7 @@ public class ProductServlet extends HttpServlet {
 
             write.write(productBO.saveProduct(product,connection));
             resp.setStatus(HttpServletResponse.SC_CREATED);
+//            write.write("Product save Sucessfully");
         }catch (Exception e){
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             e.printStackTrace();
@@ -69,7 +70,8 @@ public class ProductServlet extends HttpServlet {
             var pro_id = req.getParameter("pro_id");
 
             if (productBO.deleteProduct(pro_id,connection)){
-                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+//                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+                write.write("Product Delete Sucessfully");
             }else {
                 write.write("Delete Failed");
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
@@ -90,7 +92,8 @@ public class ProductServlet extends HttpServlet {
             System.out.println(product.getQuantity());
 
             if(productBO.updateProduct(pro_id,product,connection)){
-                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+//                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+                write.write("Product Update Sucessfully");
             }else {
                 write.write("Update Failed");
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);

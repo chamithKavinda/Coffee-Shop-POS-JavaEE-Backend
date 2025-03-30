@@ -42,6 +42,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     public boolean deleteCustomer(String contact, Connection connection) throws SQLException {
         var sc = connection.prepareStatement(DELETE_CUSTOMER);
         sc.setString(1,contact);
+
         return sc.executeUpdate() !=0;
     }
 
